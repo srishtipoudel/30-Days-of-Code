@@ -13,5 +13,4 @@ for i in range(num_test_cases):
         else:
             odd_indexed_characters+= test_string[j]
 
-
     print('{} {}'.format(even_indexed_characters, odd_indexed_characters))
