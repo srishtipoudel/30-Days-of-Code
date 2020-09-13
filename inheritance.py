@@ -44,5 +44,4 @@ class Student(Person):
         else:
             return 'O'                
 
-
 line = input().split()
