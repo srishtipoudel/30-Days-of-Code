@@ -1,15 +1,20 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
+from math import sqrt
+
+T = int(input())
+
+
 def isPrime(n):
-    if n<=1:
-        return False
-    for i in range(2, n):
-        if n%i==0:
+    for i in range(2, int(sqrt(n) + 1)):
+        if n % i is 0:
             return False
-    return True    
-num_test_cases=int(input())
-for i in range(num_test_cases):
-    n=int(input())
-    if isPrime(n):
+    return True
+
+
+for _ in range(T):
+    n = int(input())
+    
+    if n >= 2 and isPrime(n):
         print("Prime")
     else:
         print("Not prime")
